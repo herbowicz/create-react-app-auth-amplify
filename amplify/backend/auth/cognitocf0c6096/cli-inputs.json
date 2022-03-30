@@ -31,7 +31,7 @@
     "userpoolClientSetAttributes": false,
     "authSelections": "identityPoolAndUserPool",
     "resourceName": "cognitocf0c6096",
-    "useDefault": "manual",
+    "useDefault": "defaultSocial",
     "authRoleArn": {
       "Fn::GetAtt": [
         "AuthRole",
@@ -54,12 +54,11 @@
       "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://code.wroclaw.pl/\",\"https://master.djrc5x8thh3q0.amplifyapp.com/\"],\"LogoutURLs\":[\"https://master.djrc5x8thh3q0.amplifyapp.com/\",\"https://code.wroclaw.pl/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
-    "authProviders": [],
     "userPoolGroups": false,
     "adminQueries": false,
-    "thirdPartyAuth": false
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://code.wroclaw.pl/\",\"https://master.djrc5x8thh3q0.amplifyapp.com/\"],\"LogoutURLs\":[\"https://master.djrc5x8thh3q0.amplifyapp.com/\",\"https://code.wroclaw.pl/\"]}",
+    "authProviders": []
   }
 }

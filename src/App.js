@@ -122,13 +122,19 @@ export default function App() {
               }
             ]}
           >
-            <div slot="federated-buttons">
-              <Button onClick={() => Auth.federatedSignIn({
+            <Flex mb={4} color="white" justifyContent='space-between' slot="federated-buttons">
+              <Button mr={2} bg="#4267B2" onClick={() => Auth.federatedSignIn({
                 provider: "Facebook"
               })}>
                 Sign in with Facebook
               </Button>
-            </div>
+
+              <Button ml={2} bg="#4285F4" onClick={() => Auth.federatedSignIn({
+                provider: "Google"
+              })}>
+                Sign in with Google
+              </Button>
+            </Flex>
           </AmplifySignIn>
         </AmplifyAuthenticator>
       </Flex>
